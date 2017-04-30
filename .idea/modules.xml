@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/AndroidProjects/GoogleSamples/ImportantSample/io2015-codelabs/search-samples/search-action/app/app.iml" filepath="$USER_HOME$/AndroidProjects/GoogleSamples/ImportantSample/io2015-codelabs/search-samples/search-action/app/app.iml" />
+      <module fileurl="file://$USER_HOME$/AndroidProjects/GoogleSamples/ImportantSample/io2015-codelabs/search-samples/search-action/search-action.iml" filepath="$USER_HOME$/AndroidProjects/GoogleSamples/ImportantSample/io2015-codelabs/search-samples/search-action/search-action.iml" />
+    </modules>
+  </component>
+</project>
