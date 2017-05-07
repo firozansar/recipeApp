@@ -54,10 +54,11 @@ public class RecipeContentProvider extends ContentProvider {
     private static final UriMatcher sURIMatcher = new UriMatcher(UriMatcher.NO_MATCH);
     static {
         sURIMatcher.addURI(AUTHORITY, BASE_PATH, RECIPES);
+        sURIMatcher.addURI(AUTHORITY, BASE_PATH + "/*", RECIPE_ID);
         sURIMatcher.addURI(AUTHORITY, BASE_PATH + "/search/*", RECIPE_SEARCH);
         sURIMatcher.addURI(AUTHORITY, BASE_PATH + "/ingredients/*", RECIPE_INGREDIENTS);
         sURIMatcher.addURI(AUTHORITY, BASE_PATH + "/instructions/*", RECIPE_INSTRUCTIONS);
-        sURIMatcher.addURI(AUTHORITY, BASE_PATH + "/*", RECIPE_ID);
+
     }
 
     @Override
@@ -72,6 +73,7 @@ public class RecipeContentProvider extends ContentProvider {
 
         int uriType = sURIMatcher.match(uri);
         if (uriType == RECIPES) {
+            //do nothing
         } else if (uriType == RECIPE_ID) {
             return getRecipe(uri);
         } else if (uriType == RECIPE_INGREDIENTS) {
